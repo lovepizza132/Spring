@@ -1,0 +1,8 @@
+package example.member.controller;
+
+public class ParameterController {
+
+		public String test() {
+			return "04_param.jsp";
+		}
+}

@@ -1,0 +1,10 @@
+package spring.sample;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HelloController {
+	public void start() {
+		
+	}
+}

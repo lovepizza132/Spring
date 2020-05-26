@@ -1,0 +1,11 @@
+package ex06_autowiring;
+
+public class OutputerImpl implements Outputer {
+
+	@Override
+	public void write(String msg) throws Exception {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+<context:component-scan base-package="ex06_autowiring" />
+
+<bean id="message" class="ex06_autowiring.MessageBeanImpl">
+	<property name="name" value="정아인"></property> <!--  setName()를 호출하는 것임 -->
+	<property name="message"> <!--  setMessage()를 호출하는 것임 -->
+		<value>졸리고나서야 봄인줄 알았습니다.</value>
+	</property>
+</bean>
+
+<bean id="output" class="ex06_autowiring.OutputerImpl">
+	<property name="path" value="src||ex06_autowiring||save.txt"></property>
+</bean>
+
+
+
+
+</beans>

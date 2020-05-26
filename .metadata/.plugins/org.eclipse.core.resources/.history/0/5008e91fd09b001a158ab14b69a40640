@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+<!-- 1. target Bean 생성 -->
+<bean id='targetBean' class="aop1_xml.MessageBeanImpl"></bean>
+
+<!-- 2. 어드바이스Bean을 생성 -->
+<bean id="advice" class="aop1_xml.LoggingAdvice"></bean><!-- class에 대한 변수(id) 선언 후 객체 생성 -->
+<bean id="advice2" class="aop1_xml.LoggingSample"></bean>
+
+<!-- 3. AOP 설정 (Namespaces에서 aop check!)-->
+<aop:config>
+	<aop:pointcut expression="execution(public * aop1_xml.*.*Hello(..))" id="pointcut"/><!-- pointcut 객체 생성 후 id 지정 -->
+	<aop:aspect id="aspect" ref="advice">
+		<aop:before method="before" pointcut-ref="pointcut"/>
+		<aop:around method="around" pointcut-ref="pointcut"/>
+	</aop:aspect>
+	
+	<aop:aspect id="aspect" ref="advice2">
+		<aop:before method="before" pointcut-ref="pointcut"/>
+		<aop:after-returning method="" pointcut-ref/>
+</aop:config>
+</beans>

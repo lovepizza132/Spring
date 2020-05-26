@@ -1,0 +1,16 @@
+package ex01_xml1;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		ApplicationContext context = 
+				new ClassPathXmlApplicationContext("ex01_xml1/applicationContext.xml");
+
+		MessageBean bean = context.getBean("ko", MessageBean.class);
+		bean.sayHello("홍길동");
+	}
+
+}

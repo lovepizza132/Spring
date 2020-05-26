@@ -1,0 +1,12 @@
+package ex02_xml_ref;
+
+public class MemberDAO {
+	
+	private MemberBean member;
+	
+	public void insert() {
+		System.out.println("DB에" + member.getName()+"<"+
+							member.getAge()+"<"+
+							member.getMessage()+"내용을 입력합니다.");
+	}
+}

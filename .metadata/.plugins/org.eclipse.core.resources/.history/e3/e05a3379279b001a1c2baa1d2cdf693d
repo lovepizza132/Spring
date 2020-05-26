@@ -1,0 +1,26 @@
+package ex06_autowiring;
+
+public class MessageBeanImpl implements MessageBean{
+	// property
+	private String name;
+	private String message;
+	
+	
+	@Override
+	public void sayHello() {
+		System.out.println(name+"님께"+message);
+	}
+	
+	// setter
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+
+
+}

@@ -1,0 +1,21 @@
+package aop1_xml;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class LoggingAdvice {
+	public Object around(ProceedingJoinPoint point)throws Throwable{ // around 말고 after, before, afterThrows 등 이 있다.
+		String methodName = point.getSignature().getName();
+		System.out.println("[사전작업]: "+ methodName);
+		Object obj = point.proceed();
+		System.out.println("(((사후작업))): "+ methodName);
+		return obj;
+	}
+	
+	public void before(JoinPoint point)throws Throwable{ // around 말고 after, before, afterThrows 등 이 있다.
+		String methodName = point.getSignature().getName();
+		System.out.println("[사전작업]: "+ methodName);
+		Object obj = point.proceed();
+		System.out.println("(((사후작업))): "+ methodName);
+		return obj;
+	}
+}

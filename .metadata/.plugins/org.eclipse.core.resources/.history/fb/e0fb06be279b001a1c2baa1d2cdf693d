@@ -1,0 +1,17 @@
+package ex06_autowiring;
+
+public class OutputerImpl implements Outputer {
+	
+	String path;
+	
+	public void setPath(String path) {
+		this.path = path;
+	}
+	
+	
+	@Override
+	public void write(String msg) throws Exception {
+
+	}
+
+}

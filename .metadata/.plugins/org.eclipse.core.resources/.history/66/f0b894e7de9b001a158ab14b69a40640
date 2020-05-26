@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BoardDAO">
+	<select id="getBoardList" parameterType="board" resultType="board">
+		SELECT * FROM BOARD 
+		WHERE TITLE LIKE '% || #{SearchKeyword} || %' 
+		ORDER BY seq DESC
+	</select>
+
+
+
+	<insert id="insertBoard" parameterType="board.BoardVO">
+		INSERT INTO BOARD(SEQ, TITLE, WRITER, CONTENT, REGDATE, CNT) VALUES(BOARD_SEQ.NEXTVAL, #{title}, #{writer}, #{content}, sysdate, 0)
+	</insert>
+</mapper>

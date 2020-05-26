@@ -1,0 +1,17 @@
+package example.member.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ModelAttributeController {
+	
+	public String abc() {
+		return "오늘은 어디까지 하실래요?";
+	}
+	
+	@RequestMapping("/modelAttr.do")
+	public String test() {
+		return "modelAttribute";
+	}
+}

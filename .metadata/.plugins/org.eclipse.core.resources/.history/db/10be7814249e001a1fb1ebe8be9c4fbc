@@ -1,0 +1,5 @@
+package spring.sample;
+
+public class HelloController {
+
+}

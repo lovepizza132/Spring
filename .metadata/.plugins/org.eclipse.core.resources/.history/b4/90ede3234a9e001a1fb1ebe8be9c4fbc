@@ -1,0 +1,13 @@
+package example.member.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class ParameterController {
+	
+		@RequestMapping(value="/param.do", params= {""} )
+		public String test() {
+			return "04_param.jsp";
+		}
+}

@@ -1,0 +1,21 @@
+package ex06_autowiring;
+
+import java.io.FileWriter;
+
+public class OutputerImpl implements Outputer {
+	
+	String path;
+	
+	public void setPath(String path) {
+		this.path = path;
+	}
+	
+	
+	@Override
+	public void write(String msg) throws Exception {
+		FileWriter f = new FileWriter(path); // 문자형으로 쓰는 게 filewriter 바이트는 
+		f.write(msg);
+		f.close();
+	}
+
+}

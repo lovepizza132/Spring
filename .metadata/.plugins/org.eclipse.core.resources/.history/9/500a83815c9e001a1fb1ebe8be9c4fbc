@@ -1,0 +1,12 @@
+package example.member.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class ModelAttributeController {
+	
+	@RequestMapping("/modelAttribute.do")
+	public void test() {
+		
+	}
+}

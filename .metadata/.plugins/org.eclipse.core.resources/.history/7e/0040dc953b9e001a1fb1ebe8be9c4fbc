@@ -1,0 +1,31 @@
+package example.member.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import example.member.model.MemberVO;
+
+@Controller
+@RequestMapping("/board")
+public class ReqrstMappingController {
+
+	@RequestMapping(value= {"/a.do", "/b.do"})
+	public String test() {
+		System.out.println("a.do와 b.do 요청합니다.");
+		return "hello"; // WEB-INF/view/hello.jsp
+	}
+	//*********리턴형이 String인 경우: view페이지 지정
+	
+	@RequestMapping(value="/c.do", params= {"id=kim"})
+	public void test2(String id) { // 쿼리스트링으로  넘어오는 값들은 parameter로 잡으면 됨 
+		System.out.println("c.do요청 ["+id+"]");
+	}
+	//**********리턴형이 void인 경우: 요청과 동일한 이름의 뷰페이지를 지정됨
+	
+	@RequestMapping("request.do")
+	public void test3(MemberVO vo) {
+		System.out.println("request.do요청: "+ vo.getName());
+	}
+
+	
+}

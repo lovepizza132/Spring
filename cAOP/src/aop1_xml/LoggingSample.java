@@ -1,0 +1,17 @@
+package aop1_xml;
+
+import org.aopalliance.intercept.Joinpoint;
+import org.aspectj.lang.JoinPoint;
+
+public class LoggingSample {
+	public void before(JoinPoint p) {
+		System.out.println("before: 메소드 호출 전---------------");
+	}
+	
+	//public void after(JoinPoint p){}
+	//public Object around(PreceedingJoinPoint p){}
+	
+	public void afterReturning(JoinPoint p) {
+		System.out.println("afterReturning: 메소드 호출 후 예외 발생이 없는 경우");
+	}
+}

@@ -1,0 +1,13 @@
+package example.member.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class AutoScanController {
+	
+	@RequestMapping("/autoScan.do")
+	public void test() {
+		System.out.println("autoScan.do 요청 들어옴");
+	}
+}

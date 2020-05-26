@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="bean" class="ex03_xml_pvalue.MemberBean">
+<!-- 1. 생성자 이용  < constructor-arg > -->
+<!-- 2. 또는 setter < property > 이용  -->
+<!-- 3. pvalue 이용  -->
+</bean>
+
+<bean id="dao" class="ex03_xml_pvalue.MemberDAO">
+	
+</bean>
+</beans>

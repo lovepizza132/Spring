@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+
+시작페이지<hr/>
+<a href="autoScan.do">모델VO 데이타 얻어오기</a>
+이름: ${vo.name }<br/> <!-- ${vo.name }: vo 객체에서 getName()호출 -->
+아이디: ${vo.id }<br/>
+나이: ${vo.age }<br/>
+
+</body>
+</html>

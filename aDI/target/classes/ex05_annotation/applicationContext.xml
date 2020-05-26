@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+<!-- annotation 사용법 
+1. Namespaces에서 context 체크박스 표시
+2. 사용하는 객체 마다 @Component 붙이기
+3. 멤버변수 위에 @Autowired 붙이기
+4. 3번 과정이 Dependency Injection
+5. 생성자, setter가 없어도 입력 됨 왜냐 객체를 지가 만들어서 직접 주입한다아아아
+-->
+<context:component-scan base-package="ex05_annotation"></context:component-scan>
+</beans>

@@ -1,0 +1,16 @@
+package example.member.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import example.member.model.MemberVO;
+
+@Controller
+public class ParameterController {
+	
+		@RequestMapping(value="/param.do")
+		public String test(String id, String age) {
+			System.out.println("param.do 요청");
+			return "04_param";
+		}
+}

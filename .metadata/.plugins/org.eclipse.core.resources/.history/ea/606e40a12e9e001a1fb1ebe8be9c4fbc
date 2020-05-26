@@ -1,0 +1,5 @@
+package example.member.model;
+
+public class MemberVO {
+
+}

@@ -1,0 +1,21 @@
+package ex02_xml_ref;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		// 1. 스프링 설정파일 연결
+		ApplicationContext context = new 
+				ClassPathXmlApplicationContext("ex02_xml_ref/applicationContext.xml"); // 상대경로의 기준은 src폴더
+		
+		// 2. 빈 얻어오기
+		MemberBean bean = context.getBean("member", MemberBean.class);
+		System.out.println( bean.getName()+"/"+
+							bean.getAge()+"/"+
+							bean.getMessage()
+							);
+	}
+
+}

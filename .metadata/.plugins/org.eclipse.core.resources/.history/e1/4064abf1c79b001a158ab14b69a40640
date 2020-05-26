@@ -1,0 +1,11 @@
+package aop1_xml;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public interface MessageBean {
+
+	void sayHello();
+	void engSayHello();
+	void test();
+}

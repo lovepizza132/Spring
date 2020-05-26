@@ -1,0 +1,11 @@
+
+5월 25, 2020 10:11:23.79 NEW SESSION
+5월 25, 2020 10:11:23.79 [10404:2456:0525/101123.797:ERROR:device_event_log_impl.cc(208)] [10:11:23.787] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
+5월 25, 2020 10:12:03.21 [3136:1240:0525/101203.217:ERROR:device_event_log_impl.cc(208)] [10:12:03.217] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
+5월 25, 2020 16:45:08.82 [13552:888:0525/164508.821:ERROR:device_event_log_impl.cc(208)] [16:45:08.820] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
+5월 25, 2020 17:00:41.26 [8040:7256:0525/170041.265:ERROR:device_event_log_impl.cc(208)] [17:00:41.275] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
+
+5월 26, 2020 09:58:23.13 NEW SESSION
+5월 26, 2020 09:58:23.13 [12320:3872:0526/095823.135:ERROR:device_event_log_impl.cc(208)] [09:58:23.135] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
+5월 26, 2020 10:02:59.95 [8412:9956:0526/100259.958:ERROR:data_type_manager_impl.cc(475)] Autofill Wallet datatype error was encountered: Backend failed to download type.
+5월 26, 2020 10:03:09.56 [8412:9956:0526/100309.562:ERROR:device_event_log_impl.cc(208)] [10:03:09.561] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.

@@ -1,0 +1,17 @@
+package ex04_xml_list;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new 
+				ClassPathXmlApplicationContext("ex04_xml_list/applicationContext.xml");
+		
+		// 2. 빈 얻어오기
+		ListBean bean = (ListBean)context.getBean("bean");
+	}
+
+}

@@ -1,0 +1,5 @@
+package example.member.controller;
+
+public class AutoScanController {
+
+}

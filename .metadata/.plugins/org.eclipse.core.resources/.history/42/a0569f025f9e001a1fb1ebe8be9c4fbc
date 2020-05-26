@@ -1,0 +1,7 @@
+﻿
+1. 컨트롤러 만들기
+	@Controller
+	<context:component-scan ~ />
+	
+2. 요청 매핑
+	@RequestMapping("요청명")

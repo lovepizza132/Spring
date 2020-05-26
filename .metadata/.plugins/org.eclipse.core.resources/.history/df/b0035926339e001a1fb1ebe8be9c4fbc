@@ -1,0 +1,15 @@
+package example.member.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/board")
+public class ReqrstMappingController {
+
+	@RequestMapping(value= {"/a.do", "/b.do"})
+	public String test() {
+		System.out.println("a.do와 b.do 요청합니다.");
+		return "hello";
+	}
+}
