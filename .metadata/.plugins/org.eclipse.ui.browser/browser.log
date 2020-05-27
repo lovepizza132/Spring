@@ -9,3 +9,13 @@
 5월 26, 2020 09:58:23.13 [12320:3872:0526/095823.135:ERROR:device_event_log_impl.cc(208)] [09:58:23.135] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
 5월 26, 2020 10:02:59.95 [8412:9956:0526/100259.958:ERROR:data_type_manager_impl.cc(475)] Autofill Wallet datatype error was encountered: Backend failed to download type.
 5월 26, 2020 10:03:09.56 [8412:9956:0526/100309.562:ERROR:device_event_log_impl.cc(208)] [10:03:09.561] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
+5월 26, 2020 10:49:41.18 [13156:9476:0526/104941.186:ERROR:device_event_log_impl.cc(208)] [10:49:41.186] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
+
+5월 26, 2020 12:19:00.40 NEW SESSION
+5월 26, 2020 12:19:00.40 [4456:10324:0526/121900.407:ERROR:device_event_log_impl.cc(208)] [12:19:00.407] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
+5월 26, 2020 12:48:09.15 [6720:15076:0526/124809.155:ERROR:device_event_log_impl.cc(208)] [12:48:09.155] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
+5월 26, 2020 13:10:23.13 [9688:6048:0526/131023.131:ERROR:device_event_log_impl.cc(208)] [13:10:23.131] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
+5월 26, 2020 13:15:59.80 [11672:9460:0526/131559.805:ERROR:device_event_log_impl.cc(208)] [13:15:59.805] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
+5월 26, 2020 13:48:12.47 [11672:4404:0526/134812.472:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 26, 2020 13:48:56.63 [11672:4404:0526/134856.632:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+5월 26, 2020 14:01:16.44 [12652:1904:0526/140116.444:ERROR:device_event_log_impl.cc(208)] [14:01:16.444] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
